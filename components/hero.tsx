@@ -37,7 +37,7 @@ export default function Hero() {
                 International Chemistry Olympiad
               </Badge>
               <h1 className="animate-fade-in text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                ARBIChO 2024
+                ARBIChO 2025
               </h1>
               <p className="max-w-xl text-xl text-emerald-100/80">
                 Join the prestigious International Abu Reikhan Beruniy Chemistry
