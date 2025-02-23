@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -118,6 +118,90 @@ export function MainNav() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
+  );
+}
+
+export function MobileNav({ onClose }: { onClose: () => void }) {
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+
+  return (
+    <nav className="p-4">
+      <ul className="space-y-4">
+        <li>
+          <Link href="/" className="block text-white hover:text-emerald-300" onClick={onClose}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link href="/about" className="block text-white hover:text-emerald-300" onClick={onClose}>
+            About ARBICHO
+          </Link>
+        </li>
+        <li>
+          <button 
+            onClick={() => setOpenSubmenu(openSubmenu === 'competition' ? null : 'competition')}
+            className="flex items-center justify-between w-full text-white hover:text-emerald-300"
+          >
+            Competition
+            <span className="ml-2">{openSubmenu === 'competition' ? '−' : '+'}</span>
+          </button>
+          {openSubmenu === 'competition' && (
+            <ul className="mt-2 ml-4 space-y-2">
+              {competitionItems.map((item) => (
+                <li key={item.title}>
+                  <Link 
+                    href={item.href}
+                    className="block text-white hover:text-emerald-300"
+                    onClick={onClose}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+        <li>
+          <Link href="/foundation" className="block text-white hover:text-emerald-300" onClick={onClose}>
+            ARBICHO Foundation
+          </Link>
+        </li>
+        <li>
+          <Link href="/gallery" className="block text-white hover:text-emerald-300" onClick={onClose}>
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <button 
+            onClick={() => setOpenSubmenu(openSubmenu === 'arbicho2025' ? null : 'arbicho2025')}
+            className="flex items-center justify-between w-full text-white hover:text-emerald-300"
+          >
+            ARBICHO 2025
+            <span className="ml-2">{openSubmenu === 'arbicho2025' ? '−' : '+'}</span>
+          </button>
+          {openSubmenu === 'arbicho2025' && (
+            <ul className="mt-2 ml-4 space-y-2">
+              {arbicho2025Items.map((item) => (
+                <li key={item.title}>
+                  <Link 
+                    href={item.href}
+                    className="block text-white hover:text-emerald-300"
+                    onClick={onClose}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+        <li>
+          <Link href="/uzbekistan" className="block text-white hover:text-emerald-300" onClick={onClose}>
+            Uzbekistan
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
