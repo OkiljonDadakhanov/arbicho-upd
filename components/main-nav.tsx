@@ -31,15 +31,15 @@ const competitionItems = [
 const arbicho2025Items = [
   {
     title: "Organizing Committee",
-    href: "/2025/organizing-committee",
+    href: "/organizing-committee",
   },
   {
     title: "Scientific Committee",
-    href: "/2025/scientific-committee",
+    href: "/scientific-committee",
   },
   {
     title: "Programme Schedule",
-    href: "/2025/schedule",
+    href: "/schedule",
   },
 ];
 
