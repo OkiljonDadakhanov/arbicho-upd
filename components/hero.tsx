@@ -27,7 +27,7 @@ export default function Hero() {
       </div>
 
       <div className="container relative mx-auto px-4 py-20 sm:px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6">
               <Badge
@@ -39,6 +39,23 @@ export default function Hero() {
               <h1 className="animate-fade-in text-4xl font-bold tracking-tight text-white sm:text-6xl">
                 ARBIChO 2025
               </h1>
+            </div>
+
+            {/* Image moved here for mobile, hidden on larger screens */}
+            <div className="lg:hidden">
+              <div className="relative mx-auto h-[300px] w-full max-w-[500px] overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-600/20 to-emerald-900/20 backdrop-blur shadow-[0_0_30px_rgba(16,185,129,0.1)] sm:h-[400px]">
+                <Image
+                  src="/images/main-page.jpg"
+                  alt="Scientist working in a laboratory"
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#011c2c]/50 via-transparent to-transparent" />
+              </div>
+            </div>
+
+            <div className="space-y-6">
               <p className="max-w-xl text-xl text-emerald-100/80">
                 Join the prestigious International Abu Reikhan Beruniy Chemistry
                 Olympiad and showcase your chemistry prowess on a global stage.
@@ -81,8 +98,9 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hidden lg:flex lg:items-center">
-            <div className="relative h-[500px] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-600/20 to-emerald-900/20 backdrop-blur shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+          {/* Image container for larger screens */}
+          <div className="hidden items-center justify-center lg:flex lg:justify-start">
+            <div className="relative h-[500px] w-full max-w-[500px] overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-600/20 to-emerald-900/20 backdrop-blur shadow-[0_0_30px_rgba(16,185,129,0.1)]">
               <Image
                 src="/images/main-page.jpg"
                 alt="Scientist working in a laboratory"
