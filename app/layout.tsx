@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ARBIChO - International Abu Reikhan Beruniy Olympiad",
+  title: "Abu Rayhan Biruni International Chemistry Olympiad | Global Science Competition",
   description:
-    "Join the prestigious International Abu Reikhan Beruniy Chemistry Olympiad and showcase your chemistry prowess on a global stage.",
+    "Compete in the Abu Rayhan Biruni International Chemistry Olympiad, a prestigious global competition for young chemists. Test your skills, gain recognition, and connect with future scientists.",
 };
 
 export default function RootLayout({

@@ -79,7 +79,7 @@ export function TimelineSection() {
   ]
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-emerald-950/90 to-[#011c2c] py-20">
+    <section className="relative w-full bg-gradient-to-b from-emerald-950/90 to-[#011c2c] py-20" id="timeline">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-emerald-500/5 blur-3xl" />

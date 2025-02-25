@@ -57,8 +57,7 @@ export default function Hero() {
 
             <div className="space-y-6">
               <p className="max-w-xl text-xl text-emerald-100/80">
-                Join the prestigious International Abu Reikhan Beruniy Chemistry
-                Olympiad and showcase your chemistry prowess on a global stage.
+                Join the prestigious Abu Rayhan Biruni International Chemistry Olympiad and showcase your chemistry prowess on a global stage.
               </p>
             </div>
 

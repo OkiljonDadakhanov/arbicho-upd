@@ -5,7 +5,7 @@ import { ArrowRight, Trophy, Users, GraduationCap, ClipboardCheck } from "lucide
 
 export function CompetitionSection() {
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#011c2c] to-emerald-950/90 py-20">
+    <section className="relative w-full bg-gradient-to-b from-[#011c2c] to-emerald-950/90 py-20" id="competition">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute left-0 top-0 -translate-x-1/2 translate-y-1/2 h-96 w-96 rounded-full bg-emerald-500/5 blur-3xl" />
@@ -157,7 +157,7 @@ export function CompetitionSection() {
         </div>
 
         {/* Scoring System */}
-        <div>
+        <div id="scoring">
           <h3 className="mb-8 text-2xl font-semibold text-white">Scoring System</h3>
           <Card className="border-emerald-800/20 bg-emerald-900/10 backdrop-blur">
             <CardHeader>

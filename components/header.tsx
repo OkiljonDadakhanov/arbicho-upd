@@ -15,9 +15,9 @@ export function Header() {
         <div className="flex-shrink-0">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/logo/logo.png"
-              width={120}
-              height={120}
+              src="/logo/logowhite.png"
+              width={80}
+              height={80}
               alt="logo of ARBIChO"
               className="w-auto h-auto"
             />

@@ -51,7 +51,7 @@ const academicPartners = [
 
 export function SponsorsSection() {
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#023430] to-[#012e40] py-20">
+    <section className="relative w-full bg-gradient-to-b from-[#023430] to-[#012e40] py-20" id="sponsors">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute left-0 top-0 -translate-x-1/2 translate-y-1/2 h-96 w-96 rounded-full bg-emerald-500/5 blur-3xl" />

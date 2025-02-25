@@ -11,11 +11,11 @@ export function SiteFooter() {
         {/* Column 1: Logo & Description */}
         <div className="space-y-6">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo/logo.png" width={150} height={150} alt="logo of ARBIChO" />
-            <span className="font-bold text-emerald-100">ARBIChO</span>
+            <Image src="/logo/logowhite.png" width={150} height={150} alt="logo of ARBIChO" />
+           
           </Link>
           <p className="max-w-xs text-sm leading-6 text-emerald-100/80">
-            An international chemistry competition celebrating the legacy of Abu Reikhan Beruniy, fostering scientific
+            An international chemistry competition celebrating the legacy of Abu Rayhan Beruni, fostering scientific
             excellence worldwide.
           </p>
           <div className="flex space-x-5">
@@ -41,9 +41,9 @@ export function SiteFooter() {
             {[
               { name: "Home", href: "/" },
               { name: "About ARBIChO", href: "/about" },
-              { name: "Competition Details", href: "/competition" },
+              { name: "Competition Details", href: "#competition" },
               { name: "Registration", href: "/register" },
-              { name: "FAQs", href: "/faqs" },
+              { name: "FAQs", href: "#faq" },
               { name: "Contact", href: "/contact" },
             ].map((item) => (
               <li key={item.name}>

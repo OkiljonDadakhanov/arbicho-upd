@@ -10,7 +10,7 @@ import { HelpCircle } from 'lucide-react'
 const faqs = [
   {
     question: "What is ARBIChO?",
-    answer: "ARBIChO (International Abu Reikhan Beruniy Chemistry Olympiad) is a prestigious international chemistry competition that celebrates the legacy of Abu Reikhan Beruniy while fostering scientific excellence among young chemists worldwide."
+    answer: "ARBIChO (Abu Rayhan Biruni International Chemistry Olympiad) is a prestigious international chemistry competition that celebrates the legacy of Abu Rayhan Biruni while fostering scientific excellence among young chemists worldwide."
   },
   {
     question: "Who can participate in ARBIChO?",
@@ -52,7 +52,7 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#012e40] to-[#011c2c] py-20">
+    <section className="relative w-full bg-gradient-to-b from-[#012e40] to-[#011c2c] py-20" id="faq">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute left-0 top-0 -translate-x-1/2 translate-y-1/2 h-96 w-96 rounded-full bg-emerald-500/5 blur-3xl" />

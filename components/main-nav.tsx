@@ -43,6 +43,17 @@ const arbicho2025Items = [
   },
 ];
 
+const infoCenterItems = [
+  {
+    title: "Results & Reports",
+    href: '/results'
+  },
+  {
+    title: "Rules & Guidelines",
+    href: '/rules'
+  }
+]
+
 export function MainNav() {
   return (
     <NavigationMenu className="max-w-none justify-end">
@@ -79,11 +90,26 @@ export function MainNav() {
         </NavigationMenuItem>
 
         <NavigationMenuItem className="relative">
-          <Link href="/foundation" legacyBehavior passHref>
+          <Link href="/arbicho-foundation" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               ARBICHO Foundation
             </NavigationMenuLink>
           </Link>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem className="relative">
+          <NavigationMenuTrigger>Info Center</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4">
+              {infoCenterItems.map((item) => (
+                <ListItem
+                  key={item.title}
+                  title={item.title}
+                  href={item.href}
+                />
+              ))}
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
 
         <NavigationMenuItem className="relative">
@@ -162,7 +188,7 @@ export function MobileNav({ onClose }: { onClose: () => void }) {
           )}
         </li>
         <li>
-          <Link href="/foundation" className="block text-white hover:text-emerald-300" onClick={onClose}>
+          <Link href="/arbicho-foundation" className="block text-white hover:text-emerald-300" onClick={onClose}>
             ARBICHO Foundation
           </Link>
         </li>
