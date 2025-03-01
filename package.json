@@ -13,6 +13,7 @@
     "@radix-ui/react-avatar": "^1.1.3",
     "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.2",
+    "arbicho": "file:",
     "class-variance-authority": "^0.7.1",
     "lucide-react": "^0.475.0",
     "next": "15.1.7",
