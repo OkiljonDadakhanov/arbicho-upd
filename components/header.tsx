@@ -16,8 +16,8 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/logo/logowhite.png"
-              width={80}
-              height={80}
+              width={60}
+              height={60}
               alt="logo of ARBIChO"
               className="w-auto h-auto"
             />
